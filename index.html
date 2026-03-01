@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人簡介</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 導覽列 -->
+    <nav class="fixed w-full z-50 glass shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-indigo-600">我的專屬空間</div>
+            <div class="space-x-6 hidden md:block">
+                <a href="#about" class="hover:text-indigo-600 transition">關於我</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">我的專長</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">聯絡我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 -->
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="mb-8 flex justify-center">
+                <div class="w-32 h-32 rounded-full border-4 border-indigo-500 p-1 overflow-hidden">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="頭像" class="w-full h-full object-cover rounded-full bg-indigo-100">
+                </div>
+            </div>
+            <!-- 【修改位置 1】把「王小明」改成你的真實姓名或暱稱 -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">你好，我是 <span class="text-indigo-600">你的名字</span></h1>
+            
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                這是一個網頁小白的首個個人網頁。我熱愛生活，喜歡探索新事物，目前正在學習如何打造屬於自己的數位足跡。
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-medium hover:bg-indigo-700 transition shadow-lg">與我聯繫</a>
+                <a href="#about" class="bg-white text-indigo-600 border border-indigo-600 px-8 py-3 rounded-full font-medium hover:bg-indigo-50 transition">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10 text-center">關於我</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=600&q=80" alt="工作環境" class="w-full h-64 object-cover">
+                </div>
+                <div class="space-y-4">
+                    <p class="text-lg leading-relaxed">
+                        我目前居住在台灣，是一名正在探索職涯無限可能的學習者。我對攝影、寫作以及基礎程式設計有著濃厚的興趣。
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        我相信「簡單就是美」，所以我的個人網頁也遵循著簡約清爽的風格。我希望透過這個空間分享我的觀點與成長歷程。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能專長 -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">我的愛好與專長</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-indigo-500">
+                    <div class="text-indigo-500 mb-4 text-3xl">📸</div>
+                    <h3 class="text-xl font-bold mb-2">生活攝影</h3>
+                    <p class="text-gray-600">喜歡捕捉日常生活中不平凡的瞬間，記錄光影的變化。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-blue-500">
+                    <div class="text-blue-500 mb-4 text-3xl">🖋️</div>
+                    <h3 class="text-xl font-bold mb-2">文字創作</h3>
+                    <p class="text-gray-600">透過文字整理思緒，分享閱讀心得或是旅遊記趣。</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border-t-4 border-purple-500">
+                    <div class="text-purple-500 mb-4 text-3xl">💻</div>
+                    <h3 class="text-xl font-bold mb-2">網頁初探</h3>
+                    <p class="text-gray-600">剛開始接觸 HTML 與 CSS，這是我的第一個網頁作品！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯絡資訊 -->
+    <section id="contact" class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">想跟我聊聊嗎？</h2>
+            <p class="text-indigo-100 mb-10">如果你有任何問題，或是單純想打個招呼，歡迎來信！</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <div class="flex items-center space-x-3">
+                    <span class="text-xl">📧</span>
+                    <!-- 【修改位置 2】改成你的電子信箱 -->
+                    <span class="text-lg">your-email@example.com</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-xl">📍</span>
+                    <!-- 【修改位置 3】改成你居住的城市 -->
+                    <span class="text-lg">台灣, 台北</span>
+                </div>
+            </div>
+            <div class="mt-12">
+                <!-- 【修改位置 4】把頁尾的版權名字也改掉 -->
+                <p class="text-sm text-indigo-200">© 2024 你的名字 版權所有</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        console.log("網頁已載入，歡迎來到我的個人網站！");
+    </script>
+</body>
+</html>
